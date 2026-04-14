@@ -50,7 +50,7 @@ use atomic::{Atomic, Ordering};
 #[cfg(any(doc, not(any(feature = "rayon", feature = "threads", feature = "gpu"))))]
 use std::ops::IndexMut;
 
-use self::parameters::{compute_stride, DataTraits, DataType, InnerDataType, Layout};
+use self::parameters::{DataTraits, DataType, InnerDataType, Layout, compute_stride};
 use std::{fmt::Debug, ops::Index};
 
 #[derive(Debug)]
