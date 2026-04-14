@@ -55,9 +55,9 @@ where
 }
 
 pub struct TeamHandle {
-    league_rank: usize,
-    team_rank: usize,
-    team_size: usize,
+    _league_rank: usize,
+    _team_rank: usize,
+    _team_size: usize,
 }
 
 pub struct Range(pub usize);
@@ -83,7 +83,7 @@ impl ExecutionPolicy for Range {
         let _ = SCHEDULE;
         let Range(n) = self;
 
-        (0..n).into_iter().for_each(|i| functor.execute(i));
+        (0..n).for_each(|i| functor.execute(i));
     }
 
     fn dispatch_cpu<const SCHEDULE: Schedule, F: ForFunctor<Self>>(self, functor: F) {

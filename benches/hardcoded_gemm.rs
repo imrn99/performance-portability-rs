@@ -1,11 +1,11 @@
 use std::hint::black_box;
 
 use atomic::Atomic;
-use criterion::{criterion_group, criterion_main, BenchmarkId, Criterion};
+use criterion::{BenchmarkId, Criterion, criterion_group, criterion_main};
 use rand::{
+    SeedableRng,
     distr::{Distribution, Uniform},
     rngs::SmallRng,
-    SeedableRng,
 };
 use rayon::iter::{IntoParallelIterator, ParallelIterator};
 

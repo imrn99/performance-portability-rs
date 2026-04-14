@@ -1,8 +1,8 @@
 use std::hint::black_box;
 
-use criterion::{criterion_group, criterion_main, BenchmarkId, Criterion};
+use criterion::{BenchmarkId, Criterion, criterion_group, criterion_main};
 
-use poc_kokkos_rs::view::{parameters::Layout, ViewOwned};
+use poc_kokkos_rs::view::{ViewOwned, parameters::Layout};
 
 // this bench is used to evaluate the cost of creating views
 
