@@ -6,7 +6,6 @@ A number of Rust's built-in features seems compatible or even complementary to
 the programming model defined by [Kokkos][1]. This project serve as partial 
 proof and verification of that statement.
 
-
 ## Scope of the Project
 
 The goal of this project is not to produce an entire Kokkos implementation nor to
@@ -19,7 +18,7 @@ vastly different.
 
 ## Quickstart
 
-The PoC itself is a library, but you can run benchmarks and examples out of the box.
+The PoC itself is a library, but you can run benchmarks out of the box.
 
 ### Benchmarks
 
@@ -57,24 +56,12 @@ Additionally, a kokkos-equivalent of the blas kernels can be found in the `blas-
 subdirectory. These are far from being the most optimized implementation, instead they are written
 as close-ish counterparts to the Rust benchmarks.
 
-
-### Examples
-
-```bash
-cargo run --example <EXAMPLE>
-```
-
-The following examples are available:
-
-- `hello_world`: ...
-- `hello_world_omp`: ...
-
-
 ## Features
 
-Using `features`, the crate can be compiled to use different backend for execution of parallel section.
-These can (and should) also be enabled in benchmarks.
+Similarly to Kokkos, the backend used for parallel dispatch code is determined at compilation.
+It can be set using `features`
 
+  
 ```bash
 cargo build --features <FEATURE>
 ```
@@ -84,12 +71,6 @@ Available features:
 - `rayon`: Uses the [rayon][2] crate to handle parallelization on CPU.
 - `threads` : Uses `std::thread` methods to handle parallelization on CPU.
 - `gpu`: Currently used as a way to gate GPU usage as this cannot be done in pure Rust.
-
-## Compilation
-
-The build script will read the `CXX` environment variable to choose which C++ compiler to use
-for Rust/C++ interop. Note that the crate itself does not currently use C++ code, only examples
-do.
 
 ## References
 
