@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"enum":["ExecutionSpace","Schedule"],"fn":["parallel_for"],"struct":["MDRange","PerTeam","PerThread","Range","TeamHandle","TeamPolicy","TeamThreadMDRange","TeamThreadRange","TeamVectorMDRange","TeamVectorRange","ThreadVectorMDRange","ThreadVectorRange"],"trait":["ForFunctor"]};

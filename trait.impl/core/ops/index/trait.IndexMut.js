@@ -1,0 +1,9 @@
+(function() {
+    const implementors = Object.fromEntries([["poc_kokkos_rs",[["impl&lt;const N: <a class=\"primitive\" href=\"https://doc.rust-lang.org/nightly/std/primitive.usize.html\">usize</a>, T&gt; <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/ops/index/trait.IndexMut.html\" title=\"trait core::ops::index::IndexMut\">IndexMut</a>&lt;[<a class=\"primitive\" href=\"https://doc.rust-lang.org/nightly/std/primitive.usize.html\">usize</a>; <a class=\"primitive\" href=\"https://doc.rust-lang.org/nightly/std/primitive.array.html\">N</a>]&gt; for <a class=\"struct\" href=\"poc_kokkos_rs/view/struct.ViewBase.html\" title=\"struct poc_kokkos_rs::view::ViewBase\">ViewBase</a>&lt;'_, N, T&gt;<div class=\"where\">where\n    T: <a class=\"trait\" href=\"poc_kokkos_rs/view/parameters/trait.DataTraits.html\" title=\"trait poc_kokkos_rs::view::parameters::DataTraits\">DataTraits</a>,</div>",0]]]]);
+    if (window.register_implementors) {
+        window.register_implementors(implementors);
+    } else {
+        window.pending_implementors = implementors;
+    }
+})()
+//{"start":59,"fragment_lengths":[856]}

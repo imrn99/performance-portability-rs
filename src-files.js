@@ -1,0 +1,2 @@
+createSrcSidebar('[["poc_kokkos_rs",["",[["functor",[],["for_kernel.rs","mod.rs","policies.rs","reduce_kernel.rs","scan_kernel.rs"]],["view",[],["mod.rs","parameters.rs"]]],["lib.rs"]]]]');
+//{"start":19,"fragment_lengths":[166]}
